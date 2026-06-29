@@ -154,13 +154,13 @@ export default function AdminPage() {
                 {appointments.map((a) => (
                   <tr key={a.id} className="border-b border-gray-100 hover:bg-gray-50">
                     <td className="px-4 py-3 font-medium text-blue-950">{a.full_name}</td>
-                    <td className="px-4 py-3">{a.phone_number}</td>
-                    <td className="px-4 py-3">{a.email}</td>
-                    <td className="px-4 py-3">{a.city}</td>
-                    <td className="px-4 py-3">{a.consultation_mode}</td>
-                    <td className="px-4 py-3">{a.preferred_date || "-"}</td>
-                    <td className="px-4 py-3">{a.time_slot || "-"}</td>
-                    <td className="px-4 py-3">{a.whatsapp_consent ? "Yes" : "No"}</td>
+                    <td className="px-4 py-3 text-gray-800">{a.phone_number}</td>
+                    <td className="px-4 py-3 text-gray-800">{a.email}</td>
+                    <td className="px-4 py-3 text-gray-800">{a.city}</td>
+                    <td className="px-4 py-3 text-gray-800">{a.consultation_mode}</td>
+                    <td className="px-4 py-3 text-gray-800">{a.preferred_date || "-"}</td>
+                    <td className="px-4 py-3 text-gray-800">{a.time_slot || "-"}</td>
+                    <td className="px-4 py-3 text-gray-800">{a.whatsapp_consent ? "Yes" : "No"}</td>
                     <td className="px-4 py-3 text-gray-500">
                       {new Date(a.created_at).toLocaleString()}
                     </td>
