@@ -35,6 +35,12 @@ h1, h2, h3 {
   letter-spacing: -0.02em;
 }
 
+input,
+textarea,
+select {
+  color: #111827;
+}
+
 input::placeholder,
 textarea::placeholder {
   color: #6b7280;
